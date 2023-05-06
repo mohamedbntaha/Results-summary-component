@@ -23,13 +23,13 @@ p {
         top: 50%;
         transform: translate(-50%, -50%);
         display: grid;
-        width: 772px;
-        grid-template-columns: 386px 386px;
+        width: 736px;
+        grid-template-columns: 368px 368px;
     }
 }
 
 .container .result {
-    padding: 30px 45px 40px;
+    padding: 29px 45px 38px;
     text-align: center;
     color: hsl(241, 100%, 89%);
     background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
@@ -38,7 +38,7 @@ p {
 
 @media (min-width:992px) {
     .container .result {
-        padding: 45px 60px 60px;
+        padding: 45px 60px 52px;
         border-radius: 40px;
     }
 
@@ -51,16 +51,21 @@ p {
     width: 140px;
     height: 140px;
     border-radius: 50%;
-    margin: 30px auto;
-    padding: 30px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
 }
 
 @media (min-width:992px) {
     .container .result .circle {
         margin-top: 40px;
-        margin-bottom: 40px;
+        margin-bottom: 35px;
+        width: 200px;
+        height: 200px;
     }
+
 }
 
 .container .result .circle .scor {
@@ -68,12 +73,24 @@ p {
     color: #fff;
 }
 
+@media (min-width:992px) {
+    .container .result .circle .scor {
+        font-size: 65px;
+    }
+}
+
 .container .result .circle .scor+p {
     color: #8a82f9;
 }
 
+@media (min-width:992px) {
+    .container h2 {
+        font-size: 27px;
+    }
+}
+
 .container .summary {
-    padding: 30px;
+    padding: 25px 30px;
     color: hsl(224, 30%, 27%);
     display: grid;
 }
@@ -89,9 +106,23 @@ p {
 }
 
 .container .summary>div:not(:last-of-type) {
-    padding: 22px 15px 22px 50px;
+    padding: 18.7px 15px 18.7px 50px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+.container .summary>div:first-of-type {
+    margin-top: 25px;
+}
+
+.container .summary>div:nth-of-type(4) {
+    margin-bottom: 25px;
+}
+
+.container .summary .reaction {
+    background-color: hsl(0, 100%, 67%, 0.1);
 }
 
 .container .summary .reaction>p {
@@ -105,6 +136,10 @@ p {
     left: -30px;
 }
 
+.container .summary .memory {
+    background-color: hsl(39, 00%, 56%, 0.1);
+}
+
 .container .summary .memory>p {
     color: hsl(39, 100%, 56%);
     position: relative;
@@ -116,6 +151,10 @@ p {
     left: -30px;
 }
 
+.container .summary .verbal {
+    background-color: hsl(166, 100%, 37%, 0.1);
+}
+
 .container .summary .verbal>p {
     color: hsl(166, 100%, 37%);
     position: relative;
@@ -125,6 +164,10 @@ p {
     content: url(../assets/images/icon-verbal.svg);
     position: absolute;
     left: -30px;
+}
+
+.container .summary .visual {
+    background-color: hsl(234, 85%, 45%, 0.1);
 }
 
 .container .summary .visual>p {
@@ -148,7 +191,7 @@ p {
 }
 
 .continue {
-    padding: 20px;
+    padding: 18px;
     background-color: hsl(224, 30%, 27%);
     color: #fff;
     display: flex;
