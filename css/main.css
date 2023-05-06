@@ -1,4 +1,4 @@
-*:not(h2) {
+*:not(h1) {
     box-sizing: border-box;
     margin: 0;
     top: 0;
@@ -84,7 +84,7 @@ p {
 }
 
 @media (min-width:992px) {
-    .container h2 {
+    .container h1 {
         font-size: 27px;
     }
 }
